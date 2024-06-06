@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="td_css.css">
+    <title>Tokyo Disneyland Auto Routes</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h2>Tokyo Disneyland Auto Routes</h2>
+        <div id="form-container">
+            <div class="form-group">
+                <label for="current-day">Current Day</label>
+                <select id="current-day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="money">Visitor Money</label>
+                <input type="number" id="money" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="arrival-time">Arrival Time (HH:mm)</label>
+                <input type="time" id="arrival-time">
+            </div>
+            <div class="form-group">
+                <label for="left-time">Left Time (HH:mm)</label>
+                <input type="time" id="left-time">
+            </div>
+            <button onclick="showAttractionsGD()" id="btn">Show Attractions Greedy</button>
+            <button onclick="showAttractionsDP()" id="btn">Show Attractions DP</button>
+        </div>
+    </div>
+    
+    <div id="main-content">        
+        <div id="attractions"></div>
+    </div>
+
+    <script src="td_greedy.js"></script>
+    <script src="td_dynamic programming.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Global styles */
+body {
+    font-family: Poppins;
+    background-color: #f4eed6;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 350px;
+    background-color: #6cb9e6;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Form styles */
+#form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#tdmap {
+    width: 750px;
+    height: 500px;
+}
+
+/* Form element styles */
+.form-group select,
+.form-group input[type="number"],
+.form-group input[type="time"],
+button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+    margin-bottom: 20px;
+    background-color: #f4eed6;
+    color: #4f3e4f; 
+    border: none; 
+    cursor: pointer;
+    font-size: 16px; 
+    border-radius: 10px; 
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 2px; 
+    border-color: #4f3e4f; 
+}
+
+button:hover {
+    background-color: #c980e2; 
+}
+
+#main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Map container styles */
+#map-container {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#tdmap {
+    width: 750px;
+    height: 500px;
+}
+
+/* CSS untuk menambahkan border dan merapikan tampilan tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 80%;
+}
+
+th, td {
+    border: 1px solid #4f3e4f;
+    text-align: center;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #8cd7e5;
+    min-width: 100px;
+}
+
+/* Atur lebar kolom Name */
+th:nth-child(2), td:nth-child(2) {
+    width: 300px;
+}
