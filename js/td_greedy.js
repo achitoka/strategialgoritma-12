@@ -23,36 +23,35 @@ function showAttractionsGD() {
     // Array atraksi, termasuk main entrance
     var attractions = [
         { number: '0', name: "Main Entrance", popularity: 0, price: 0, duration: 0, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 0, y: 0 } },
-        { number: '50', name: "Country Bear Theater", popularity: 7, price: 3000, duration: 20, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 5, y: 5 } },
-        { number: '51', name: "Mark Twain Riverboat", popularity: 6, price: 2000, duration: 30, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 15, y: 10 } },
-        { number: '53', name: "Big Thunder Mountain", popularity: 9, price: 4000, duration: 35, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 15, y: 10 } },
-        { number: '68', name: "Splash Mountain", popularity: 8, price: 4500, duration: 40, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 20, y: 15 } },
-        { number: '69', name: "Beaver Brothers Explorer Canoes", popularity: 7, price: 3500, duration: 25, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 25, y: 20 } },
-        { number: '72', name: "Grandma Sara's Kitchen", popularity: 5, price: 2500, duration: 30, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 30, y: 25 } },
-        { number: '80', name: "Peter Pan's Flight", popularity: 8, price: 3000, duration: 20, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 35, y: 30 } },
-        { number: '77', name: "Snow White's Adventures", popularity: 7, price: 2500, duration: 15, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 40, y: 35 } },
-        { number: '78', name: "Cinderella's Fairy Tale Hall", popularity: 9, price: 4000, duration: 25, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 45, y: 40 } },
-        { number: '75', name: "\"It's a Small World\"", popularity: 8, price: 3500, duration: 20, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 50, y: 45 } },
-        { number: '74', name: "Alice's Tea Party", popularity: 6, price: 3000, duration: 15, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 55, y: 50 } },
-        { number: '81', name: "Enchanted Tale of Beauty and the Beast", popularity: 9, price: 4500, duration: 35, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 60, y: 55 } },
-        { number: '82', name: "Pinocchio's Daring Journey", popularity: 7, price: 2500, duration: 20, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 65, y: 60 } },
-        { number: '83', name: "Pooh's Hunny Hunt", popularity: 8, price: 3000, duration: 25, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 70, y: 65 } },
-        { number: '109', name: "Minnie's House", popularity: 7, price: 2500, duration: 15, daysOpen: ["Friday", "Saturday", "Sunday"], location: { x: 75, y: 70 } },
-        { number: '110', name: "Roger Rabbit's Car Toon Spin", popularity: 8, price: 3500, duration: 20, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 80, y: 75 } },
-        { number: '104', name: "Gadget's Go Coaster", popularity: 7, price: 2500, duration: 15, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 85, y: 80 } },
-        { number: '108', name: "Donald's Boat", popularity: 6, price: 2000, duration: 10, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 90, y: 85 } },
-        { number: '122', name: "Space Mountain", popularity: 9, price: 5000, duration: 30, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 95, y: 90 } },
-        { number: '123', name: "Buzz Lightyear's Astro Blasters", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 100, y: 95 } },
-        { number: '120', name: "Star Tours", popularity: 9, price: 4000, duration: 30, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 105, y: 100 } },
-        { number: '125', name: "Monsters, Inc. Ride & Go Seek", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 110, y: 105 } },
-        { number: '24', name: "Pirates of the Caribbean", popularity: 9, price: 4000, duration: 30, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], location: { x: 115, y: 110 } },
-        { number: '25', name: "Jungle Cruise", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 120, y: 115 } },
-        { number: '27', name: "Enchanted Tiki Room", popularity: 7, price: 3000, duration: 20, daysOpen: ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 125, y: 120 } },
-        { number: '26', name: "Swiss Family Treehouse", popularity: 6, price: 2000, duration: 15, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 130, y: 125 } },
-        { number: '23', name: "Western River Railroad", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 135, y: 130 } },
-        { number: '28', name: "Cafe Orleans", popularity: 7, price: 3000, duration: 20, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], location: { x: 140, y: 135 } }
+        { number: '50', name: "Country Bear Theater", popularity: 7, price: 3000, duration: 20, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -26, y: 54 } },
+        { number: '51', name: "Mark Twain Riverboat", popularity: 6, price: 2000, duration: 30, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -24, y: 65 } },
+        { number: '53', name: "Big Thunder Mountain", popularity: 9, price: 4000, duration: 35, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -42.5, y: 56.8 } },
+        { number: '68', name: "Splash Mountain", popularity: 8, price: 4500, duration: 40, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -16.6, y: 78.8 } },
+        { number: '69', name: "Beaver Brothers Explorer Canoes", popularity: 7, price: 3500, duration: 25, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -33, y: 77.7 } },
+        { number: '72', name: "Grandma Sara's Kitchen", popularity: 5, price: 2500, duration: 30, daysOpen: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -15, y: 75 } },
+        { number: '80', name: "Peter Pan's Flight", popularity: 8, price: 3000, duration: 20, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: -13.5, y: 60 } },
+        { number: '77', name: "Snow White's Adventures", popularity: 7, price: 2500, duration: 15, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: -6.8, y: 59.3 } },
+        { number: '78', name: "Cinderella's Fairy Tale Hall", popularity: 9, price: 4000, duration: 25, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 2.5, y: 56 } },
+        { number: '75', name: "\"It's a Small World\"", popularity: 8, price: 3500, duration: 20, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 8.5, y: 73 } },
+        { number: '74', name: "Alice's Tea Party", popularity: 6, price: 3000, duration: 15, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 5.5, y: 63.9 } },
+        { number: '81', name: "Enchanted Tale of Beauty and the Beast", popularity: 9, price: 4500, duration: 35, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 36, y: 52.5 } },
+        { number: '82', name: "Pinocchio's Daring Journey", popularity: 7, price: 2500, duration: 20, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 16, y: 61 } },
+        { number: '83', name: "Pooh's Hunny Hunt", popularity: 8, price: 3000, duration: 25, daysOpen: ["Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], location: { x: 19, y: 65 } },
+        { number: '109', name: "Minnie's House", popularity: 7, price: 2500, duration: 15, daysOpen: ["Friday", "Saturday", "Sunday"], location: { x: 22, y: 65 } },
+        { number: '110', name: "Roger Rabbit's Car Toon Spin", popularity: 8, price: 3500, duration: 20, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 25, y: 78.8 } },
+        { number: '104', name: "Gadget's Go Coaster", popularity: 7, price: 2500, duration: 15, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 29, y: 57 } },
+        { number: '108', name: "Donald's Boat", popularity: 6, price: 2000, duration: 10, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 27, y: 59 } },
+        { number: '122', name: "Space Mountain", popularity: 9, price: 5000, duration: 30, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 31, y: 30 } },
+        { number: '123', name: "Buzz Lightyear's Astro Blasters", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"], location: { x: 17, y: 30 } },
+        { number: '120', name: "Star Tours", popularity: 9, price: 4000, duration: 30, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 22, y: 18 } },
+        { number: '125', name: "Monsters, Inc. Ride & Go Seek", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: 20, y: 15 } },
+        { number: '24', name: "Pirates of the Caribbean", popularity: 9, price: 4000, duration: 30, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], location: { x: -15, y: 21 } },
+        { number: '25', name: "Jungle Cruise", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -30, y: 33} },
+        { number: '27', name: "Enchanted Tiki Room", popularity: 7, price: 3000, duration: 20, daysOpen: ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -28, y: 39.5 } },
+        { number: '26', name: "Swiss Family Treehouse", popularity: 6, price: 2000, duration: 15, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -23.4, y: 36 } },
+        { number: '23', name: "Western River Railroad", popularity: 8, price: 3500, duration: 25, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], location: { x: -34.8, y: 38 } },
+        { number: '28', name: "Cafe Orleans", popularity: 7, price: 3000, duration: 20, daysOpen: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], location: { x: -30, y: 35 } }
     ];
-    
 
     // Ambil atraksi yang buka pada hari ini
     var openAttractions = attractions.filter(attraction => attraction.daysOpen.includes(day));
@@ -75,8 +74,23 @@ function showAttractionsGD() {
                                                                 attraction.duration <= remainingTime);
             if (feasibleAttractions.length === 0) break;
 
-            var nearestAttraction = feasibleAttractions.reduce((nearest, attraction) => calculateDistance(currentLocation, attraction.location) <
-                                                                calculateDistance(currentLocation, nearest.location) ? attraction : nearest);
+            // Sorting feasible attractions based on distance, popularity, ticket price, and duration
+            feasibleAttractions.sort((a, b) => {
+                var distanceA = calculateDistance(currentLocation, a.location);
+                var distanceB = calculateDistance(currentLocation, b.location);
+
+                if (distanceA !== distanceB) {
+                    return distanceA - distanceB; // Prioritize shorter distance
+                } else if (a.popularity !== b.popularity) {
+                    return b.popularity - a.popularity; // Then prioritize higher popularity
+                } else if (a.price !== b.price) {
+                    return a.price - b.price; // Then prioritize lower ticket price
+                } else {
+                    return a.duration - b.duration; // Finally prioritize shorter duration
+                }
+            });
+
+            var nearestAttraction = feasibleAttractions[0]; // Select the first attraction after sorting
             route.push(nearestAttraction);
             remainingMoney -= nearestAttraction.price;
             remainingTime -= nearestAttraction.duration;
@@ -86,6 +100,9 @@ function showAttractionsGD() {
         route.push(attractions[0]); // Akhiri dengan main entrance
         return route;
     }
+
+    // Menghitung waktu awal
+    var startTime = performance.now();
 
     // Inisialisasi variabel untuk rute terbaik
     var bestRoute = [];
@@ -105,6 +122,14 @@ function showAttractionsGD() {
     }
 
     console.log(bestRoute);
+
+    // Menghitung waktu akhir
+    var endTime = performance.now();
+
+    // Menghitung waktu eksekusi dalam milidetik
+    var executionTime = endTime - startTime;
+
+    console.log("Execution time: " + executionTime + " milliseconds");
 
     // Tampilkan hasil rute atraksi
     var attractionsDiv = document.getElementById("attractions");
